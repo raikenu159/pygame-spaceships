@@ -46,6 +46,7 @@ def yellow_handle_movement(keys, yellow): # Yellow spaceship movement
             yellow.y -= SPACESHIP_VELOCITY
         if keys[pygame.K_s] and yellow.y + SPACESHIP_VELOCITY < WIN_HEIGHT - SPACESHIP_HEIGHT: # DOWN
             yellow.y += SPACESHIP_VELOCITY
+
 def red_handle_movement(keys, red): # Red spaceship movement
         # Red spaceship movement
         if keys[pygame.K_KP4] and red.x - SPACESHIP_VELOCITY > BORDER.x + BORDER.width: # LEFT
